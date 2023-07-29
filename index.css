@@ -1,0 +1,197 @@
+/*
+    https://www.joshwcomeau.com/css/custom-css-reset/
+ */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: calc(1em + 0.5rem);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    Sunrise Maintenance Services
+ */
+
+:root {
+    --site-width: 980px;
+    --yellow: rgb(255, 222, 17);
+}
+
+@media screen and (max-width: 980px) {
+    :root {
+        --site-width: 95%;
+    }
+
+    .display-none-mobile {
+        display: none;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+}
+
+html {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgb(26, 26, 26);
+    position: sticky;
+    top: 0;
+    padding: 0.5em;
+    border-bottom: 4px solid white;
+}
+
+header h1 {
+    color: var(--yellow);
+    padding-bottom: 0;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header ul a {
+    padding: 16px;
+    text-decoration: none;
+}
+
+header ul a {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+a:link,
+a:visited {
+    color: white;
+}
+
+a:focus,
+a:hover,
+a:active {
+    color: var(--yellow);
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.gutter {
+    margin-left: calc((100% - var(--site-width)) / 2);
+    width: var(--site-width);
+}
+
+#call-now {
+    background-color: saddlebrown;
+    background-image: url(call-now.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#call-now h1 {
+    font-size: 300%;
+}
+
+#call-now h1 small {
+    display: block;
+    font-size: 50%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.button {
+    background-color: rgb(43, 108, 163);
+    color: var(--yellow);
+    display: inline-block;
+    padding: 0.5em 2em;
+}
+
+#our-services {
+    background-color: rgb(43, 108, 163);
+    color: white;
+}
+
+#who-we-are {
+    background-blend-mode: saturation;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url(who-we-are.jpg);
+    background-size: cover;
+    color: white;
+}
+
+#who-we-are h1 {
+    color: var(--yellow);
+}
+
+.text-left {
+    text-align: left;
+}
+
+.margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-centered {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 420px;
+    text-align: center;
+}
+
+#contact-us {
+    background-color: rgb(14, 77, 130);
+    color: white;
+}
+
+#contact-us h1 {
+    color: rgb(90, 183, 232);
+}
+
+footer {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
